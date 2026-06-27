@@ -8,6 +8,10 @@ on:
     branches:
       - main
 
+# THIS IS THE MAGIC FIX: It forces write permissions for the bot
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
